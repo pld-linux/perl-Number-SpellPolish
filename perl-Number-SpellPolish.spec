@@ -10,7 +10,7 @@ Summary(pl):	Number::SpellPolish - wymawianie liczb po polsku
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.7
 Release:	2
-License:	LGPL
+License:	LGPL 2.1+
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	47cd0408e40cacab4651dc9ccc988ae1
@@ -45,7 +45,8 @@ Ten modu³ nie jest podklas± Number::Spell.
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
