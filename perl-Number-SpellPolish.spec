@@ -12,6 +12,7 @@ Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	47cd0408e40cacab4651dc9ccc988ae1
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl-devel >= 5.6.1
 BuildArch:	noarch
