@@ -8,7 +8,7 @@ Summary:	Number::SpellPolish -- spell out number in Polish
 Summary(pl):	Number::SpellPolish -- wymawianie liczb po polsku
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.7
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
