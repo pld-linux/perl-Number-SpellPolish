@@ -3,8 +3,8 @@
 %define		pdir	Number
 %define		pnam	SpellPolish
 
-Summary:	Number-SpellPolish perl module
-Summary(pl):	Modu³ perla Number-SpellPolish
+Summary:	Number::SpellPolish perl module
+Summary(pl):	Modu³ perla Number::SpellPolish
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.5
 Release:	3
