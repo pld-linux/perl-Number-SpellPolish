@@ -27,7 +27,7 @@ won't need it.
 This module *is not* a subclass of Number::Spell.
 
 %description -l pl
-Ten modu³ perla daje mo¿liwo¶æ zapisu liczb i cen w jêzyku polskim.
+Ten modu³ Perla daje mo¿liwo¶æ zapisu liczb i cen w jêzyku polskim.
 Nie znaj±cym polskiego ten modu³ jest raczej zbêdny.
 
 Ten modu³ nie jest podklas± Number::Spell.
