@@ -7,7 +7,7 @@
 %define	pnam	SpellPolish
 Summary:	Number::SpellPolish - spell out number in Polish
 Summary(pl):	Number::SpellPolish - wymawianie liczb po polsku
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-Number-SpellPolish
 Version:	0.7
 Release:	3
 License:	LGPL 2.1+
