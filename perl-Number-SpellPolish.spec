@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Number
-%define	pnam	SpellPolish
+%define		pdir	Number
+%define		pnam	SpellPolish
 Summary:	Number::SpellPolish - spell out number in Polish
 Summary(pl):	Number::SpellPolish - wymawianie liczb po polsku
 Name:		perl-Number-SpellPolish
