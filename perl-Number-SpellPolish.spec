@@ -7,7 +7,7 @@ Summary:	Number::SpellPolish perl module
 Summary(pl):	Modu³ perla Number::SpellPolish
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.5
-Release:	3
+Release:	4
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -38,8 +38,6 @@ Ten modu³ nie jest podklas± Number::Spell.
 perl Makefile.PL
 %{__make}
 
-gzip -9nf Changes README
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -50,6 +48,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc Changes README
 %{perl_sitelib}/Number/SpellPolish.pm
 %{_mandir}/man3/*
