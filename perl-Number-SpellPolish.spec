@@ -7,10 +7,11 @@ Summary:	Number-SpellPolish perl module
 Summary(pl):	Modu³ perla Number-SpellPolish
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.5
-Release:	2
+Release:	3
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
+Patch0:		%{name}-Autoloader.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
 BuildArch:	noarch
@@ -31,6 +32,7 @@ Ten modu³ nie jest podklas± Number::Spell.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 perl Makefile.PL
