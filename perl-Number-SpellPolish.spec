@@ -1,17 +1,17 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
 %include	/usr/lib/rpm/macros.perl
-
-%define		pdir	Number
-%define		pnam	SpellPolish
-
-Summary:	Number::SpellPolish perl module
-Summary(pl):	Modu³ perla Number::SpellPolish
+%define	pdir	Number
+%define	pnam	SpellPolish
+Summary:	Number::SpellPolish -- spell out number in Polish
+Summary(pl):	Number::SpellPolish -- wymawianie liczb po polsku
 Name:		perl-%{pdir}-%{pnam}
-Version:	0.5
-Release:	4
+Version:	0.7
+Release:	1
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
-Patch0:		%{name}-Autoloader.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6.1
 BuildArch:	noarch
@@ -32,11 +32,11 @@ Ten modu³ nie jest podklas± Number::Spell.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p1
 
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -48,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Changes README
 %{perl_sitelib}/Number/SpellPolish.pm
 %{_mandir}/man3/*
