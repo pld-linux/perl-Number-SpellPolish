@@ -7,7 +7,7 @@ Summary:	Number-SpellPolish perl module
 Summary(pl):	Modu³ perla Number-SpellPolish
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.5
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,6 +22,12 @@ prices in Polish language. If you don't speak polish, you probably
 won't need it.
 
 This module *is not* a subclass of Number::Spell.
+
+%description -l pl
+Ten modu³ perla daje mo¿liwo¶æ zapisu liczb i cen w jêzyku polskim.
+Nie znaj±cym polskiego ten modu³ jest raczej zbêdny.
+
+Ten modu³ nie jest podklas± Number::Spell.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
