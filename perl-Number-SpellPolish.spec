@@ -6,7 +6,7 @@
 %define		pdir	Number
 %define		pnam	SpellPolish
 Summary:	Number::SpellPolish - spell out number in Polish
-Summary(pl):	Number::SpellPolish - wymawianie liczb po polsku
+Summary(pl.UTF-8):   Number::SpellPolish - wymawianie liczb po polsku
 Name:		perl-Number-SpellPolish
 Version:	0.7
 Release:	3
@@ -26,11 +26,11 @@ won't need it.
 
 This module *is not* a subclass of Number::Spell.
 
-%description -l pl
-Ten modu³ Perla daje mo¿liwo¶æ zapisu liczb i cen w jêzyku polskim.
-Nie znaj±cym polskiego ten modu³ jest raczej zbêdny.
+%description -l pl.UTF-8
+Ten moduÅ‚ Perla daje moÅ¼liwoÅ›Ä‡ zapisu liczb i cen w jÄ™zyku polskim.
+Nie znajÄ…cym polskiego ten moduÅ‚ jest raczej zbÄ™dny.
 
-Ten modu³ nie jest podklas± Number::Spell.
+Ten moduÅ‚ nie jest podklasÄ… Number::Spell.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
