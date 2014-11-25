@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Number
 %define		pnam	SpellPolish
+%include	/usr/lib/rpm/macros.perl
 Summary:	Number::SpellPolish - spell out number in Polish
 Summary(pl.UTF-8):	Number::SpellPolish - wymawianie liczb po polsku
 Name:		perl-Number-SpellPolish
@@ -14,8 +14,9 @@ License:	LGPL 2.1+
 Group:		Development/Languages/Perl
 Source0:	http://radek.karnet.pl/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	47cd0408e40cacab4651dc9ccc988ae1
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/Number-SpellPolish/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
