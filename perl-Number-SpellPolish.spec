@@ -4,7 +4,6 @@
 
 %define		pdir	Number
 %define		pnam	SpellPolish
-%include	/usr/lib/rpm/macros.perl
 Summary:	Number::SpellPolish - spell out number in Polish
 Summary(pl.UTF-8):	Number::SpellPolish - wymawianie liczb po polsku
 Name:		perl-Number-SpellPolish
